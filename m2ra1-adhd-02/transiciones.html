@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/transiciones.css">
+</head>
+<body>
+    <nav>
+        <a href="animaciones.html">Animaciones</a>
+        <a href="index.html">Inicio</a>
+        <a href="animate_style.html">Animate.style</a>
+        <a href="magic_css.html">Magic CSS</a>
+    </nav>
+    <div class="center">
+        <section class="contenido">
+            <img src="img/paisaje.jpg" alt="Hue Rotate" class="paisaje" id="paisaje">
+            <div class="card-container">
+                <div class="card" id="card">
+                    <div class="side front">
+                        <img src="img/sol.png" alt="">
+                    </div>
+                    <div class="side back">
+                        <img src="img/luna.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="cambiarTiempo">
+        <button>Cambiar tiempo</button>
+    </div>
+    <script>
+        document.getElementById('cambiarTiempo').addEventListener('click', function() {
+          document.getElementById('card').classList.toggle('active-2');
+          document.getElementById('paisaje').classList.toggle('paisaje-a');
+        });
+        </script>
+</body>
+</html>
