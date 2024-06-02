@@ -14,9 +14,9 @@
         <a href="animate_style.html">Animate.style</a>
         <a href="magic_css.html">Magic CSS</a>
     </nav>
-    <div class="center">
-        <section class="contenido">
-            <img src="img/paisaje.jpg" alt="Hue Rotate" class="paisaje" id="paisaje">
+    <main class="relacion-aspecto">
+        <section class="contenido" id="contenido">
+            <img src="img/montana.png" alt="Hue Rotate" class="paisaje" id="paisaje">
             <div class="card-container">
                 <div class="card" id="card">
                     <div class="side front">
@@ -28,15 +28,16 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
     <div id="cambiarTiempo">
         <button>Cambiar tiempo</button>
     </div>
     <script>
         document.getElementById('cambiarTiempo').addEventListener('click', function() {
-          document.getElementById('card').classList.toggle('active-2');
-          document.getElementById('paisaje').classList.toggle('paisaje-a');
+            document.getElementById('card').classList.toggle('active-2');
+            document.getElementById('paisaje').classList.toggle('paisaje-a');
+            document.getElementById('contenido').classList.toggle('contenido-a');
         });
-        </script>
+    </script>
 </body>
 </html>

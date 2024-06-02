@@ -1,0 +1,47 @@
+.relacion-aspecto{
+    position: relative;
+    width: 100%;
+    padding-top: 43%;
+}
+.contenido{
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@keyframes animacion-carro {
+    0%{transform: rotateZ(0deg);left: 0px;top: 0px;}
+    70%{transform: rotateZ(0deg);left: 50%;top: 0px;}
+    85%{transform: rotateZ(40deg);left: 55%;top: -20%;}
+    100%{transform: rotateZ(0deg);left: 50%;top: 0px;}
+}
+.animacion-carro{
+    width: 25%;
+    position: relative;
+    animation: animacion-carro;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.animacion-arbol{
+    width: 25%;
+    position: relative;
+    left: 38.5%;
+}
+@keyframes animacion-manzana {
+    0%{left: 16%;top: -60%;}
+    100%{transform: rotateZ(30deg);left: 16%;top: -21%;}
+}
+.animacion-manzana{
+    width: 5%;
+    position: relative;
+    left: 16%;
+    top: -60%;
+    animation-name: animacion-manzana;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
